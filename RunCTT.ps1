@@ -9,7 +9,7 @@
     $Marker = "C:\ProgramData\PCS\CTT.done"
 
     function Write-Log($msg) {
-        "[{0}] {1}" -f (Get-Date -f o), $msg | Out-File -FilePath $Log -Append -Encoding UTF8
+        "[{0}] {1}" -f (Get-Date -f o), $msg | Out-File -FilePath $Log -Append
     }
 
     try {
